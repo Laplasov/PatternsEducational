@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Patterns.AbstractFactory
 {
+    public enum FactoryType { A, B, None }
     internal class Client
     {
-        public IAbstractFactory CreateFactory(string Name)
+        public IAbstractFactory CreateFactory(FactoryType Name)
         {
             switch (Name)
             {
-                case "A":
+                case FactoryType.A:
                     return new ConcreteFactoryA();
-                case "B":
+                case FactoryType.B:
                     return new ConcreteFactoryB();
                 default: 
                     throw new ArgumentException("Not existing factory!");
