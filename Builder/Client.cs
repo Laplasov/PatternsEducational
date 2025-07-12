@@ -41,6 +41,7 @@ namespace Patterns.Builder
 
         internal Client() 
         {
+
             builder = BuilderCollection[BuilderType.BuilderA];
             director = new Director(builder);
 
@@ -48,13 +49,13 @@ namespace Patterns.Builder
             Test();
 
             builder = BuilderCollection[BuilderType.BuilderB];
-            director = new Director(builder);
+            director.SetBuilder(builder);
 
             Console.WriteLine("Test B builder -\n\n");
             Test();
 
             builder = BuilderCollection[BuilderType.BuilderC];
-            director = new Director(builder);
+            director.SetBuilder(builder);
 
             Console.WriteLine("Test B builder -\n\n");
             Test();
