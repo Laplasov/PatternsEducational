@@ -22,6 +22,22 @@ namespace Patterns.Builder
             {BuilderType.BuilderB, new ConcreteBuilderB() },
             {BuilderType.BuilderC, new ConcreteBuilderC() }
         };
+        TopObject topObjectOne = new TopObject()
+        {
+            Name = "Same",
+            Id = 145,
+            Location = "London",
+            Comment = "Hello world!",
+        };
+
+        TopObject topObjectTwo = new TopObject()
+        {
+            Name = "Nataly",
+            Id = 1337,
+            Location = "Panama",
+            Comment = "All your base...",
+        };
+
 
         internal Client() 
         {
@@ -46,27 +62,11 @@ namespace Patterns.Builder
 
         void Test()
         {
-            var topObjectOne = new TopObject()
-            {
-                Name = "Same",
-                Id = 145,
-                Location = "London",
-                Comment = "Hello world!",
-            };
-
-            var topObjectTwo = new TopObject()
-            {
-                Name = "Nataly",
-                Id = 1337,
-                Location = "Panama",
-                Comment = "All your base...",
-            };
 
             director.Build(topObjectOne);
             Console.WriteLine("Build:\n");
             Console.WriteLine(builder.GetResult());
             builder.Reset();
-
 
             director.BuildMix(topObjectOne, topObjectTwo);
             Console.WriteLine("BuildMix:\n");
