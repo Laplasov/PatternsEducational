@@ -10,19 +10,15 @@ namespace Patterns.Singleton
     internal abstract class Singleton<T> : ISingleton where T : Singleton<T>, new()
     {
         protected Singleton() { }
-        public static T Instance 
-        { 
-            get {
-                if (m_instance == null)
-                {
-                    var _newSingleton = new T();
-                    SingletonRegistry.Register(_newSingleton);
-                    m_instance = _newSingleton;
-                }
-                return m_instance; 
-            }
-        }
-        static T? m_instance;
+
+        private static readonly Lazy<T> _instance = new(() =>
+        {
+            var instance = new T();
+            SingletonRegistry.Register(instance);
+            return instance;
+        });
+
+        public static T Instance => _instance.Value;
         public virtual string GetInfo() => "Base";
 
     }
