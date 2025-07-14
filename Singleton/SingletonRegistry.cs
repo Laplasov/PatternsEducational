@@ -10,7 +10,7 @@ namespace Patterns.Singleton
     {
         private static readonly List<ISingleton> _instances = new();
 
-        public void Register(ISingleton instance)
+        public static void Register(ISingleton instance)
         {
             if (!_instances.Contains(instance))
                 _instances.Add(instance);

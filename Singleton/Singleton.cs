@@ -16,8 +16,7 @@ namespace Patterns.Singleton
                 if (m_instance == null)
                 {
                     var _newSingleton = new T();
-                    SingletonRegistry m_registry = new SingletonRegistry();
-                    m_registry.Register(_newSingleton);
+                    SingletonRegistry.Register(_newSingleton);
                     m_instance = _newSingleton;
                 }
                 return m_instance; 
