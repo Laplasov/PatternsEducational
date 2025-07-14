@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Patterns.Singleton
 {
     internal class SingletonRegistry
     {
-        private static readonly List<ISingleton> _instances = new();
+        private static readonly ConcurrentBag<ISingleton> _instances = new();
 
         public static void Register(ISingleton instance)
         {
