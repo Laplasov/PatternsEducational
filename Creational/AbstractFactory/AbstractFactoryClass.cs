@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Patterns.AbstractFactory
 {
-    public static class AbstractFactoryClass
+    public class AbstractFactoryClass
     {
-        public static void AbstractFactory()
+        public AbstractFactoryClass()
         {
             Client client = new Client();
 
