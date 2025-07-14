@@ -16,6 +16,7 @@ namespace Patterns.Singleton
                 _instances.Add(instance);
         }
 
-        public static List<ISingleton> GetAllInstances() => _instances;
+        public static IReadOnlyList<ISingleton> GetAllInstances() => 
+            new List<ISingleton>(_instances).AsReadOnly();
     }
 }
