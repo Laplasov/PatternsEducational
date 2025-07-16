@@ -14,7 +14,8 @@ class Program
         // Structural Patterns
 
         //new Patterns.Structural.Adapter.Client();
-        new Patterns.Structural.Bridge.Client();
+        //new Patterns.Structural.Bridge.Client();
+        new Patterns.Structural.Сomposite.Client();
 
         Console.ReadLine();
     }
