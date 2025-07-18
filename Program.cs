@@ -1,4 +1,6 @@
 ﻿
+using Patterns.Structural.Flyweight;
+
 class Program
 {
     static async Task Main(string[] args)
@@ -17,7 +19,9 @@ class Program
         //new Patterns.Structural.Bridge.Client();
         //new Patterns.Structural.Сomposite.Client();
         //new Patterns.Structural.Decorator.Client();
-        new Patterns.Structural.Facade.Client();
+        //new Patterns.Structural.Facade.Client();
+        new Patterns.Structural.Flyweight.Client();
+
 
         Console.ReadLine();
     }
