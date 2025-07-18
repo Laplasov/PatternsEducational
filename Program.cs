@@ -20,7 +20,8 @@ class Program
         //new Patterns.Structural.Сomposite.Client();
         //new Patterns.Structural.Decorator.Client();
         //new Patterns.Structural.Facade.Client();
-        new Patterns.Structural.Flyweight.Client();
+        //new Patterns.Structural.Flyweight.Client();
+        new Patterns.Structural.Proxy.Client();
 
 
         Console.ReadLine();
