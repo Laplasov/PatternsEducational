@@ -1,6 +1,4 @@
 ﻿
-using Patterns.Structural.Flyweight;
-
 class Program
 {
     static async Task Main(string[] args)
@@ -21,7 +19,12 @@ class Program
         //new Patterns.Structural.Decorator.Client();
         //new Patterns.Structural.Facade.Client();
         //new Patterns.Structural.Flyweight.Client();
-        new Patterns.Structural.Proxy.Client();
+        //new Patterns.Structural.Proxy.Client();
+
+        //Behavioral Patterns
+
+        new Patterns.Behavioral.ChainOfResponsibility.Client();
+
 
 
         Console.ReadLine();
