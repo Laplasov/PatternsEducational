@@ -23,8 +23,8 @@ class Program
 
         //Behavioral Patterns
 
-        new Patterns.Behavioral.ChainOfResponsibility.Client();
-
+        //new Patterns.Behavioral.ChainOfResponsibility.Client();Command
+        new Patterns.Behavioral.Command.Client(); 
 
 
         Console.ReadLine();
