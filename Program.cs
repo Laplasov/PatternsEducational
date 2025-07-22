@@ -24,8 +24,8 @@ class Program
         //Behavioral Patterns
 
         //new Patterns.Behavioral.ChainOfResponsibility.Client();Command
-        new Patterns.Behavioral.Command.Client(); 
-
+        //new Patterns.Behavioral.Command.Client(); 
+        new Patterns.Behavioral.Interpreter.Client();
 
         Console.ReadLine();
     }
