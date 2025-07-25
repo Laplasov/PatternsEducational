@@ -28,7 +28,8 @@ class Program
         //new Patterns.Behavioral.Interpreter.Client();
         //new Patterns.Behavioral.Iterator.Client();
         //new Patterns.Behavioral.Mediator.Client();
-        new Patterns.Behavioral.Memento.Client();
+        //new Patterns.Behavioral.Memento.Client();
+        new Patterns.Behavioral.Observer.Client();
 
         Console.ReadLine();
     }

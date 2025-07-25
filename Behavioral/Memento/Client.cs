@@ -17,7 +17,6 @@ namespace Patterns.Behavioral.Memento
                 Id = 123,
             };
 
-
             var caretaker = new Caretaker();
 
             caretaker.Load(originator);
