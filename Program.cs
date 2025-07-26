@@ -30,7 +30,8 @@ class Program
         //new Patterns.Behavioral.Mediator.Client();
         //new Patterns.Behavioral.Memento.Client();
         //new Patterns.Behavioral.Observer.Client();
-        new Patterns.Behavioral.State.Client();
+        //new Patterns.Behavioral.State.Client();
+        new Patterns.Behavioral.Strategy.Client();
 
         Console.ReadLine();
     }
