@@ -17,7 +17,7 @@ namespace Patterns.Behavioral.Observer
         }
         public IDisposable Subscribe(IObserver<T> observer)
         {
-            ValueChanged += observer.OnNext; 
+            ValueChanged += observer.OnNext;
             return new Unsubscriber(() => ValueChanged -= observer.OnNext);
         }
 
