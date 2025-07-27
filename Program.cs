@@ -31,7 +31,9 @@ class Program
         //new Patterns.Behavioral.Memento.Client();
         //new Patterns.Behavioral.Observer.Client();
         //new Patterns.Behavioral.State.Client();
-        new Patterns.Behavioral.Strategy.Client();
+        //new Patterns.Behavioral.Strategy.Client();
+        new Patterns.Behavioral.Template.Client();
+
 
         Console.ReadLine();
     }
